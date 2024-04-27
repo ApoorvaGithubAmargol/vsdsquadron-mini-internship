@@ -60,8 +60,16 @@ Privileged and unprivileged code
 Code can execute as privileged or unprivileged. Unprivileged execution limits or excludes access to some resources. Privileged execution has access to all resources. Handler mode is always privileged. Thread mode can be privileged or unprivileged.
 The microprocessors have two execution modes: Handler mode and Thread mode. The processor always enters the Handler mode when an interrupt or CPU exception is raised. The processor is in thread state when it is executing background (noninterrupt) code.
 
+**First let us learn about the instruction types used in RISCV:**
+RISC-V is a 32-bit instruction set architecture (ISA) that has six core instruction formats: B, I, S, SB, U, and J. These formats are used to encode different types of instructions, including register-register, register-immediate, store, branch, and jump instructions.
 
+![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/r%2C%20i.jpg)
 
+![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/J%20.jpg)
+
+![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/branching%2C%20u%20%2C%20s.jpg)
+
+![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/sw%2C%20lw.jpg)
 
 - INSTRUCTIONS GIVEN TO US
 
