@@ -62,6 +62,18 @@ The microprocessors have two execution modes: Handler mode and Thread mode. The 
 
 **First let us learn about the instruction types used in RISCV:**
 RISC-V is a 32-bit instruction set architecture (ISA) that has six core instruction formats: B, I, S, SB, U, and J. These formats are used to encode different types of instructions, including register-register, register-immediate, store, branch, and jump instructions.
+- R type:
+  This is the register type, these instructions use register-]-register format where instruction specifies two registers and a function code. This performs arithematic code, logical and shift operations. Example- add, sub, null, & and.
+  
+- I type:
+    Register immediate type. These have a register and an immediate value. Example- addi, slti, lui
+
+    What are load and store instructions?
+   1. Load: data is moved from memory to reg., data is read from memory to location and stored in a register for further process.
+   2. Store: this operation involves transfer from register to memory; data is written from register to memory.
+
+- J type:
+  
 
 
 - INSTRUCTIONS GIVEN TO US
