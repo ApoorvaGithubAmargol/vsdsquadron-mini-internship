@@ -100,7 +100,7 @@ In RISC-V assembly language, the instruction `add r6, r2, r1` performs an additi
 - `r6`, `r2`, `r1`: These are registers in the RISC-V architecture. Registers are small, fast storage locations within the CPU. `r6` is the destination register where the result of the addition will be stored, and `r2` and `r1` are the source registers containing the values to be added.
 So, the instruction `add r6, r2, r1` adds the values in registers `r2` and `r1` and stores the result in register `r6`.
 
-![](images/add.jpg)
+<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/add.jpg" width="550">
 
 32-bit code:
 0000000 01001 01010 000 00110 0110011
@@ -109,7 +109,8 @@ So, the instruction `add r6, r2, r1` adds the values in registers `r2` and `r1` 
 2)	Sub r7,r1,r2 : 
 This instruction subtracts the value in register `r2` from the value in register `r1` and stores the result in register `r7`. For example, if `r1` contains 10 and `r2` contains 5, then after this instruction, `r7` will contain 5 (10 - 5).
 
-![](images/sub.jpg)
+<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/sub.jpg" width="550">
+
 
 32-bit code:
 0000000 01010 01001 000 00111 0110011
@@ -182,3 +183,108 @@ This instruction shifts the value in register `r14` right by the amount specifie
 
 32-bit code:
 0000000 01110 00014 101 10000 0010011
+
+
+
+
+
+**TASK 3**
+
+ Part1: C lab
+ 
+**Code#1: SUM of digits from 1 to n**
+
+_Step1_- open terminal in ubuntu
+
+Type the following command to ensure we are in the home directory
+
+       cd
+
+_Step2_- 
+This code opens leafpad editor which we use to write simple codes in.
+
+       leafpad sum1ton
+
+In this case "sum1ton' is the name of file of editor we want to open.
+If we want to name our file "abcd" then type 
+
+       leafpad abcd
+
+So, this step will open up the editor where you can type your codes.
+
+_Step3_- We want to create a code which calculates sum of numbers from 1 to n
+
+        #include <stdio.h>
+               int main() {
+               int i, sum=0, n=5;
+               for (i = 1 ; i <= n; ++i) {
+                      sum += i;
+               }
+               printf("sum of numbers from 1 to %d is %d", n, sum);
+               return 0;
+               }
+
+_Step4_- open up terminal and run the following 
+
+       gcc sum1ton.c
+
+(Note- Here, "sum1ton" is your file name, so replace it with your file name)
+ - Explanation- 'gcc' command used mostly in Unix operating systems stands for "GNU compiler collection". So, basically when we run 'gcc' in a terminal or command prompt window, it compiles C, C++ and many other programming language source codes into executable programs(basically translates human language to machine readable code that computer can execute directly).
+
+_Step5_- Run 
+
+        ls -ltr
+
+This code helps us to list compiled executables, helps to view compilation output and to check compilation status.
+
+_Step6_-
+
+       ./a.out
+
+This is used to execute the compiled program named "a.out" in present directory. 
+"./" specifies that we want to run the particular program located at present or current directory.
+"a.out" is default name given to executable file.
+
+_Note_: If we want to give a different name for the executable file run this -
+
+       gcc abc_name source_code.c
+here 'abc' is the name of the executable file, which followed by name of source code to be compiled
+
+_Step7_- Output
+
+**You should get the following output**
+
+<img width="488" alt="Screenshot 2024-04-28 231824" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/7fbb2254-3e2c-4bc4-a031-b518e98f1468">
+
+
+
+
+**Code#2: sum of n numbers when the input 'n' is given by user**
+
+The output is as follows-
+
+<img width="459" alt="user input sum" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/5ca41d8f-fd84-4ad7-a9ed-87907f78b74e">
+
+
+
+
+PART2: RISCV LABS
+
+Instruction 1- 
+
+    riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c
+
+<IMG src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/main.png">
+
+
+Instruction 2-
+
+     riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv641 -o sum1ton.o sum1ton.c
+
+<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/MAIN2.png">
+
+
+- `-O1` makes your code faster by applying basic optimizations, but it's careful not to change the code too much, so it's easier to understand and debug.
+- `-Ofast` makes your code even faster by using more aggressive optimizations, but it might change the code in ways that make it harder to understand or debug.
+- A more aggressive level means the compiler will take more liberties in restructuring the code to make it run faster, potentially at the cost of making the code harder to debug or deviating from the original source code's behavior.
+
