@@ -18,7 +18,7 @@ git clone https://github.com/riscv/riscv-gnu-toolchain
 ./configure --prefix=/opt/riscv
 
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/riscv%20toolchain%20configure.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/riscv%20toolchain%20configure.png">
 
 **step3**: Installation of yosys.
 
@@ -30,27 +30,27 @@ sudo apt install build-essential clang bison flex \
                  libboost-python-dev libboost-filesystem-dev
 
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/yosys%20build.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/yosys%20build.png">
 
 - verification of yosys
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/yosys%20build2.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/yosys%20build2.png">
 
 **step4**: Installation of iverilog.
 
 - sudo apt-get install iverilog
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/iverilog.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/iverilog.png">
 
 **step5**:Installation of gtkwave.
 - sudo apt update
 sudo apt install gtkwave
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/gtkwave1.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/gtkwave1.png">
 
 - verification of gtwave
 
-![](https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/gtkwave2.png)
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/gtkwave2.png">
 
 
 **TASK 2**
@@ -100,7 +100,7 @@ In RISC-V assembly language, the instruction `add r6, r2, r1` performs an additi
 - `r6`, `r2`, `r1`: These are registers in the RISC-V architecture. Registers are small, fast storage locations within the CPU. `r6` is the destination register where the result of the addition will be stored, and `r2` and `r1` are the source registers containing the values to be added.
 So, the instruction `add r6, r2, r1` adds the values in registers `r2` and `r1` and stores the result in register `r6`.
 
-<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/add.jpg" width="550">
+<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/add.jpg" width="450">
 
 32-bit code:
 0000000 01001 01010 000 00110 0110011
@@ -109,7 +109,7 @@ So, the instruction `add r6, r2, r1` adds the values in registers `r2` and `r1` 
 2)	Sub r7,r1,r2 : 
 This instruction subtracts the value in register `r2` from the value in register `r1` and stores the result in register `r7`. For example, if `r1` contains 10 and `r2` contains 5, then after this instruction, `r7` will contain 5 (10 - 5).
 
-<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/sub.jpg" width="550">
+<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/sub.jpg" width="450">
 
 
 32-bit code:
@@ -254,7 +254,7 @@ _Step7_- Output
 
 **You should get the following output**
 
-<img width="488" alt="Screenshot 2024-04-28 231824" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/7fbb2254-3e2c-4bc4-a031-b518e98f1468">
+<img width="400" alt="Screenshot 2024-04-28 231824" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/7fbb2254-3e2c-4bc4-a031-b518e98f1468">
 
 
 
@@ -263,7 +263,7 @@ _Step7_- Output
 
 The output is as follows-
 
-<img width="459" alt="user input sum" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/5ca41d8f-fd84-4ad7-a9ed-87907f78b74e">
+<img width="400" alt="user input sum" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/assets/121378763/5ca41d8f-fd84-4ad7-a9ed-87907f78b74e">
 
 
 
@@ -274,17 +274,54 @@ Instruction 1-
 
     riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c
 
-<IMG src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/main.png">
+<IMG width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/main.png">
 
 
 Instruction 2-
 
      riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv641 -o sum1ton.o sum1ton.c
 
-<img src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/MAIN2.png">
+<img width="400" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/MAIN2.png">
 
 
 - `-O1` makes your code faster by applying basic optimizations, but it's careful not to change the code too much, so it's easier to understand and debug.
 - `-Ofast` makes your code even faster by using more aggressive optimizations, but it might change the code in ways that make it harder to understand or debug.
 - A more aggressive level means the compiler will take more liberties in restructuring the code to make it run faster, potentially at the cost of making the code harder to debug or deviating from the original source code's behavior.
 
+
+
+**Task 4**
+
+ Until now we saw the output of command "./a.out" for "gcc<program>".
+ Now we will be learning about output of spike simulator. The spike simlator output is said to be verified if it is same as "./a.out" output.
+Spike is a RISC-V ISA simulator used for running RISC-V assembly programs.
+
+STEP 1:
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/spike1.png">
+
+ STEP 2: to check next instructions
+
+ <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/next%20instructions.png" >
+
+ STEP 3: To check contents of reg a0
+ 
+ We see that in our main function we have the following list-
+ 
+ <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/MAIN2.png">
+ 
+ Now to check the contents of reg a0-
+
+ <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/contents%20of%20reg%20a0.png">
+
+ STEP 4: To check contents of reg a0 after lui-
+
+ <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/contents%20of%20a0%20after%20lui.png">
+
+ Step 5: to check stack pointer contents
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/uploadthis_stack%20pointer.png">
+
+ 
+
+ 
