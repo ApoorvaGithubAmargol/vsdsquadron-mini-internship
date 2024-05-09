@@ -41,6 +41,31 @@ This code compiles the verilog code
 
 **Step 4:** Insert the instructions of and observe the waveforms
 
-<img widht="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/task5_rv32.png" >
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/task5_rv32.png" >
 
 <span style="font-size:larger;"> **OUTPUTS** </span>
+
+Add r6,r2,r1
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_add.png">
+
+Sub r7,r1,r2
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_sub.png">
+
+ADDI r12,r4,5
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_add%20imm.png">
+
+sw r3,r2,r2
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_sw.png">
+
+slt r11,r2,r4
+
+so slt sets destination register to 1 if the source register(r2) is lesser than register r4 and zero otherwise.
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_slt.png">
+
+
+
