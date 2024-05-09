@@ -39,7 +39,7 @@ This code compiles the verilog code
 
 <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/task5_instertttt.png">
 
-**Step 4:** Insert the instructions of and observe the waveforms
+**Step 4:** Insert the instructions and observe the waveforms
 
 <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/task5_rv32.png" >
 
