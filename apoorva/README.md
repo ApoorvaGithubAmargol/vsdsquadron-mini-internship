@@ -68,4 +68,12 @@ so slt sets destination register to 1 if the source register(r2) is lesser than 
 <img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/t5_slt.png">
 
 
+FIVE STAGE PIPELINE
 
+- Instruction Fetch (IF): The processor fetches the next instruction from memory. The program counter (PC) is used to determine the address of the next instruction.
+- Instruction Decode (ID): The fetched instruction is decoded to determine the operation to be performed and the operands involved.
+- Execution (EX): The processor executes the instruction, which may involve arithmetic or logical operations, memory accesses, or control flow changes.
+- Memory Access (MEM): If the instruction requires a memory access, such as a load or store operation, it is performed in this stage.
+- Write Back (WB): The results of the instruction are written back to the appropriate registers.
+
+<img width="450" src="https://github.com/ApoorvaGithubAmargol/vsdsquadron-mini-internship/blob/main/images/T5_FIVESTAGE%20PIPELINE.png">
